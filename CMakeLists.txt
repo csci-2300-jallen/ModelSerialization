@@ -11,20 +11,17 @@ qt_standard_project_setup()
 set(APP_SOURCES
     src/main.cpp
 
-    src/model/MessageModel.cpp
-    src/model/MessageModel.h
-    src/model/BallModel.cpp
-    src/model/BallModel.h
+    src/model/Robot.cpp
+    src/model/Robot.h
+    src/model/Point2D.h
 
-    src/controller/AppController.cpp
-    src/controller/AppController.h
-    src/controller/BallController.cpp
-    src/controller/BallController.h
+    src/controller/RobotController.cpp
+    src/controller/RobotController.h
 
-    src/view/BallWindow.cpp
-    src/view/BallWindow.h
-    src/view/MainWindow.cpp
-    src/view/MainWindow.h
+    src/view/RobotGridWidget.cpp
+    src/view/RobotGridWidget.h
+    src/view/RobotWindow.cpp
+    src/view/RobotWindow.h
 )
 
 add_executable(app ${APP_SOURCES})
